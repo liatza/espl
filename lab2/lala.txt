@@ -1,0 +1,34 @@
+  FILE *f1= fopen("t1.txt" , "rt");
+if(!f1)
+{
+  fprintf(stderr, "Can't open input file t1\n");
+}
+    int counter=0;
+ 
+while (!feof(f1)) {
+    char word[100];
+  char c=fgetc(f1);
+ if((!isdigit(c))&&(!isalpha(c))) {
+  
+  // if(isblank(c)) {
+  word[counter] = 0;
+    printf("%s", word);
+     printf("\n");
+ 
+    counter=0;
+   }
+   //else{
+  // counter++;}
+    //counter=0;
+// }
+ else{
+    word[counter]=c;
+  // printf("%c",c);
+  counter++;
+   }   
+}
+//for(int i=0;i<
+
+   fclose(f1);
+
+}
