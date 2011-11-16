@@ -29,4 +29,4 @@ namelist make_namelist();
 /** add a new or already registered name to the list */
 void add_name(namelist nl, char *name);
 
-#endif	
+#endif
