@@ -1,0 +1,9 @@
+chmod +x 1.txt
+#!/bin/sh
+echo $PATH
+
+for a in `find $1 -name "*.c"| xargs grep -wl main` ;do
+  echo $a
+  echo ================================================
+  grep -n -A 4 main $a
+done
