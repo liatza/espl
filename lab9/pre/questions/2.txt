@@ -1,0 +1,15 @@
+secret-elf-a
+  Type:                              REL (Relocatable file)
+====================
+secret-elf-b
+  Type:                              REL (Relocatable file)
+====================
+secret-elf-c
+  Type:                              REL (Relocatable file)
+====================
+secret-elf-d
+  Type:                              EXEC (Executable file)
+====================
+secret-elf-e
+  Type:                              EXEC (Executable file)
+====================

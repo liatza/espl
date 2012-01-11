@@ -1,0 +1,8 @@
+#!/bin/sh
+chmod +x elfreader
+for a in `ls elfs`; do
+  echo $a >> 2.txt
+  
+  readelf -a ./elfs/$a | grep Type: >> 2.txt
+  echo ==================== >> 2.txt
+done

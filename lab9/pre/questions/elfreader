@@ -1,0 +1,8 @@
+#!/bin/sh
+chmod +x elfreader
+for a in `ls elfs`; do
+  echo $a >> 1.txt
+  echo ==================== >> 1.txt
+  readelf -a ./elfs/$a >> 1.txt
+  echo ==================== >> 1.txt
+done
